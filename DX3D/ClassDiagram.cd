@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Camera" Collapsed="true">
+    <Position X="50" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQCAAEAAEAACAAAACAAAQAAAABACAAAAACCQAAAAAI=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walls" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAAAAAAAAAAAAAAAAACAAAAAAAABACAACAAAA=</HashCode>
+      <FileName>Walls.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeachGrid" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAABACACAAAAA=</HashCode>
+      <FileName>TeachGrid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActionCube" Collapsed="true">
+    <Position X="19.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAEIUIAgAAAAQAAAAAEAAAAAAAABACAEAAAEA=</HashCode>
+      <FileName>ActionCube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActionMoveTo" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAAAABAAAAAAAgAAAAAAAAIAgAAAAAAAAAAA=</HashCode>
+      <FileName>ActionMoveTo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActionRepeat" Collapsed="true">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAACAAAAiABACgAAAAAAAAABAAAAI=</HashCode>
+      <FileName>ActionRepeat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActionSequence" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAEAAABAAAAAAAAACAAAAAAQAAEAAAABAgAAI=</HashCode>
+      <FileName>ActionSequence.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IActionDelegate" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IAction" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQCBAAAAAgABAAAAAIAAAAAAAAAAAAEAgBAAAgAAAY=</HashCode>
+      <FileName>IAction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IActionObject" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAIAAAEAAAAAAAAAAAAAQAACAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>IActionObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hexagon" Collapsed="true">
+    <Position X="21.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAEAAIAAAAAAQAAAAAAAAAAAAAABACACAAAAA=</HashCode>
+      <FileName>Hexagon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeightMap" Collapsed="true">
+    <Position X="26" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAIAEAEEAAAAAAAihAAAAAAQAAABACAAAAABA=</HashCode>
+      <FileName>HeightMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjMap" Collapsed="true">
+    <Position X="28.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIQAAAAAAAAAQAAIAGCBAAIAQBAAAABACAAAEAAA=</HashCode>
+      <FileName>ObjMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneGrid" Collapsed="true">
+    <Position X="37.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAEBAAIAAAAIAIAAAAAAAAAAAGABBiQJAAAAw=</HashCode>
+      <FileName>SceneGrid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneHeightmap" Collapsed="true">
+    <Position X="39.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAQAAAAAAEAAAAAQAAAAAAAAAAIBACQAAAAAA=</HashCode>
+      <FileName>SceneHeightmap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneObjMap" Collapsed="true">
+    <Position X="41.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAAAAAAACAAAAAAAAACAAAAAIBBCQAAAAAA=</HashCode>
+      <FileName>SceneObjMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DebugManager" Collapsed="true">
+    <Position X="51.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABEAACAAAIABAAAAAAAAAABAIAAAAAAAAAAEAQA=</HashCode>
+      <FileName>Debug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DrawingGroup" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAADAAAAAAAAAAAQAABAAAAIABAAAAAAABA=</HashCode>
+      <FileName>DrawingGroup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjLoader" Collapsed="true">
+    <Position X="46.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgAAABAAAAAAAAAAAIAAAEAAAAgAAABAAAMAAAAA=</HashCode>
+      <FileName>ObjLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IDisplayObject" Collapsed="true">
+    <Position X="25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQEAAAIECCAEAgAACAAAAAQAggAAgAAABACAAAAAAA=</HashCode>
+      <FileName>IDisplayObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMap" Collapsed="true">
+    <Position X="27.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAEAAAACCAQAAAACBAAAAQAAAAAAAAAGIABAA=</HashCode>
+      <FileName>IMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IScene" Collapsed="true">
+    <Position X="39.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAACEAAAAAAAAgCAAAAAEAAAQBACQAAAACA=</HashCode>
+      <FileName>IScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IUnitObject" Collapsed="true">
+    <Position X="30.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ISAEAAEACAUAADAAAACAKAAAAABAEAAUBAAAAAICQAA=</HashCode>
+      <FileName>IUnitObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeviceManager" Collapsed="true">
+    <Position X="46.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAgAQAAAAgAAAAAAAAAAABABAAAgAAAACAAAAAAA=</HashCode>
+      <FileName>DeviceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardManager" Collapsed="true">
+    <Position X="50" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>KeyboardManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MapManager" Collapsed="true">
+    <Position X="51.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAEAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjManager" Collapsed="true">
+    <Position X="48.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAABABAgAAAAAAAAAAQAAQ=</HashCode>
+      <FileName>ObjManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneManager" Collapsed="true">
+    <Position X="51.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAkAAAAAAAAAEhABAAAAAABACQAAAAAQ=</HashCode>
+      <FileName>SceneManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextureManager" Collapsed="true">
+    <Position X="46.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TextureManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeManager" Collapsed="true">
+    <Position X="48.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEAAQAAEAAAAAAAAEAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>TimeManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cubeman" Collapsed="true">
+    <Position X="32.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JIQAAAUACAEAATAAAALCIgAAAABAEQAwBBQCAABiAAA=</HashCode>
+      <FileName>Cubeman.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CubemanParts" Collapsed="true">
+    <Position X="35" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAIAAEIIAAAAAAAAAwIAAAEBACAAgAAAA=</HashCode>
+      <FileName>CubemanParts.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemyman" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAIQAEIJAAAAAAAgAQIAAAABACAAgAAAA=</HashCode>
+      <FileName>Enemyman.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cube" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAgiEEADAAgAAhAQAAAAMABAEAABJBBCAEECAAA=</HashCode>
+      <FileName>Cube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cubeman_Head" Collapsed="true">
+    <Position X="16" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEABgCEEADAAgAACAQAAAAEABAEgAAJBBCAEACAAA=</HashCode>
+      <FileName>Cubeman_Head.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cubeman_Left_arm" Collapsed="true">
+    <Position X="13" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAgSEEADAAgAACIQAAAAGABAEAAAJBBCAEACAAA=</HashCode>
+      <FileName>Cubeman_Left_arm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cubeman_Left_leg" Collapsed="true">
+    <Position X="19" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAgCEEADAAgAACAQAAAAEABAEAABJBBiAEACAAA=</HashCode>
+      <FileName>Cubeman_Left_leg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cubeman_Right_arm" Collapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAgCMEADAAgAACIQAAAAEABAEAAAJBBCAEACCAA=</HashCode>
+      <FileName>Cubeman_Right_arm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cubeman_Right_leg" Collapsed="true">
+    <Position X="16" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQEAAgCEEADAAgAACIQAAAAEABAEAAAJBBCAEACAAA=</HashCode>
+      <FileName>Cubeman_Right_leg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Grid" Collapsed="true">
+    <Position X="48.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAAEAAAAAAAAAEAAAAAAAAAAAAAABACAAAAAQA=</HashCode>
+      <FileName>Grid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AseCharacter" Collapsed="true">
+    <Position X="30.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIgAAAAgAAIAAACAAAAAAAAIAAAAAAABACAAACQAA=</HashCode>
+      <FileName>AseCharacter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AseLoader" Collapsed="true">
+    <Position X="48.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAwQACACggYCACAAgAQQQAgAAAAgEAAAGBALoAAAA=</HashCode>
+      <FileName>AseLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AseObject" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIYABAAAEAAAEAAAQAAEAAACAAgABEAAABAiAgACAYA=</HashCode>
+      <FileName>AseObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Picking" Collapsed="true">
+    <Position X="23.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAABAAAAAABEAAAAAAAAAAAAABAKQAAAAAA=</HashCode>
+      <FileName>Picking.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ray" Collapsed="true">
+    <Position X="50" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAQCEAAAAAAAAAQAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Ray.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application" Collapsed="true">
+    <Position X="46.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAAAAAAAAAAAABABCAAAAABACQAAAAAA=</HashCode>
+      <FileName>Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseObject" Collapsed="true">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAAAAgQAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>BaseObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="KEYBOARD_STATE" Collapsed="true">
+    <Position X="46.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAACAAACAAAAAA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="VERTEX_PC" Collapsed="true">
+    <Position X="48.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAEAAAAAAAIA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="VERTEX_PT" Collapsed="true">
+    <Position X="46.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAIA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="VERTEX_PN" Collapsed="true">
+    <Position X="50" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAIA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="VERTEX_PNT" Collapsed="true">
+    <Position X="51.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAEEQAAAAAAAA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MTLTEX" Collapsed="true">
+    <Position X="44" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAAACAAAAAAAAAAAAACAAAAAEAAAAAAFAAgA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ASE_POS_SAMPLE" Collapsed="true">
+    <Position X="46.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ASE_ROT_SAMPLE" Collapsed="true">
+    <Position X="48.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ASE_SCENE" Collapsed="true">
+    <Position X="50" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAABAAAAAAAAgAAAAAAAAAAAg=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BoundingSphere" Collapsed="true">
+    <Position X="51.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="SCENE_INDEX" Collapsed="true">
+    <Position X="46.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAQAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TAG_DISPLAYOBJECT" Collapsed="true">
+    <Position X="48.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>GlobalDefinition.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

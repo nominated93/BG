@@ -1,0 +1,240 @@
+﻿  stdafx.cpp
+  UIText.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\uitext.cpp(19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  UIImage.cpp
+  UIButton.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\uibutton.cpp(66): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\uibutton.cpp(142): warning C4244: '=': conversion from 'UINT' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\uibutton.cpp(143): warning C4244: '=': conversion from 'UINT' to 'FLOAT', possible loss of data
+  TimeManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\timemanager.cpp(28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  TextureManager.cpp
+  SkyBox.cpp
+  SkinnedMeshManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\skinnedmeshmanager.cpp(8): warning C4316: 'SkinnedMesh': object allocated on the heap may not be aligned 16
+  SkinnedMesh.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\skinnedmesh.cpp(55): warning C4244: '=': conversion from 'DOUBLE' to 'float', possible loss of data
+  SceneObjMap.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(45): warning C4316: 'SkyBox': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(58): warning C4316: 'ObjMap': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(59): warning C4316: 'ItemManager': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(61): warning C4316: 'Player': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(62): warning C4316: 'EnemyManager': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(63): warning C4316: 'BulletManager': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(65): warning C4316: 'Picking': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(66): warning C4316: 'Minimap': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(69): warning C4316: 'Collision': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(81): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\sceneobjmap.cpp(82): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  SceneManager.cpp
+  Ray.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\ray.cpp(71): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+  ProgressBarManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(20): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(24): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(28): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(29): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(32): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(46): warning C4244: '=': conversion from 'float' to 'UINT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(50): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(103): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(104): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\progressbarmanager.cpp(105): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+  Player.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(95): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(97): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(100): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(102): warning C4244: 'argument': conversion from 'unsigned long' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(106): warning C4316: 'Inventory': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(109): warning C4316: 'OBB': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(118): warning C4316: 'UIText': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(122): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(125): warning C4316: 'UIText': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(129): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(132): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(134): warning C4244: 'argument': conversion from 'unsigned long' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\player.cpp(189): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+  Picking.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\picking.cpp(77): warning C4244: 'initializing': conversion from 'LONG' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\picking.cpp(78): warning C4244: 'initializing': conversion from 'LONG' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\picking.cpp(80): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Particle.cpp
+  ObjMap.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\objmap.cpp(145): warning C4018: '>': signed/unsigned mismatch
+  ObjManager.cpp
+  ObjLoader.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\objloader.cpp(71): warning C4473: 'sscanf_s' : not enough arguments passed for format string
+  c:\users\psj25_000\desktop\core_git\bgp\dx3d\objloader.cpp(71): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\psj25_000\desktop\core_git\bgp\dx3d\objloader.cpp(71): note: the missing variadic argument 3 is required by format string '%f'
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\objloader.cpp(223): warning C4473: 'sscanf_s' : not enough arguments passed for format string
+  c:\users\psj25_000\desktop\core_git\bgp\dx3d\objloader.cpp(223): note: placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+  c:\users\psj25_000\desktop\core_git\bgp\dx3d\objloader.cpp(223): note: the missing variadic argument 3 is required by format string '%f'
+  OBB.cpp
+  MonsterManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\monstermanager.cpp(83): warning C4316: 'Monster': object allocated on the heap may not be aligned 16
+  Generating Code...
+  Compiling...
+  Monster.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\monster.cpp(25): warning C4316: 'OBB': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\monster.cpp(28): warning C4316: 'SkinnedMesh': object allocated on the heap may not be aligned 16
+  Minimap.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\minimap.cpp(26): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\minimap.cpp(28): warning C4244: 'argument': conversion from 'unsigned long' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\minimap.cpp(32): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+  MeshManager.cpp
+  Mesh.cpp
+  MapManager.cpp
+  LobbyScene.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\lobbyscene.cpp(43): warning C4316: 'Character': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\lobbyscene.cpp(55): warning C4316: 'Cursor': object allocated on the heap may not be aligned 16
+  LobbyLoading.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\lobbyloading.cpp(26): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\lobbyloading.cpp(30): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+  Loading.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\loading.cpp(39): warning C4018: '>=': signed/unsigned mismatch
+  KeyboardManager.cpp
+  ItemManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(22): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(23): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(24): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(26): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(27): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(28): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(30): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(31): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(32): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(34): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(35): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(36): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(38): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(39): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(40): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itemmanager.cpp(61): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+  ItemBox.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(51): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(73): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(95): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(117): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(143): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(151): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(152): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(172): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(190): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(201): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\itembox.cpp(212): warning C4018: '<': signed/unsigned mismatch
+  Item.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(29): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(30): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(70): warning C4316: 'SkinnedMesh': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(71): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(136): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(137): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(178): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\item.cpp(190): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+  Inventory.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(33): warning C4316: 'Equipment': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(34): warning C4316: 'ItemBox': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(35): warning C4316: 'Cursor': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(37): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(109): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(130): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(150): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(170): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(192): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(201): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(202): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(220): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(239): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(250): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(261): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\inventory.cpp(276): warning C4018: '<': signed/unsigned mismatch
+  IUnitObject.cpp
+  IUIObject.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\iuiobject.cpp(93): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\iuiobject.cpp(94): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\iuiobject.cpp(95): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\iuiobject.cpp(96): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+  IDisplayObject.cpp
+  Heap.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\heap.cpp(64): warning C4018: '>=': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\heap.cpp(70): warning C4018: '<': signed/unsigned mismatch
+  GlobalDefinition.cpp
+  GameLoading.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\gameloading.cpp(26): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+  Frustum.cpp
+  Generating Code...
+  Compiling...
+  FontManager.cpp
+  FireParticle.cpp
+  Equipment.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(19): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(41): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(57): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(72): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(88): warning C4316: 'Item': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(108): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(119): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(128): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(137): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\equipment.cpp(138): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  EnemyParticle.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemyparticle.cpp(29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemyparticle.cpp(30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemyparticle.cpp(31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemyparticle.cpp(32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemyparticle.cpp(33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  EnemyManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemymanager.cpp(32): warning C4316: 'Enemy': object allocated on the heap may not be aligned 16
+  Enemy.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemy.cpp(69): warning C4316: 'OBB': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\enemy.cpp(212): warning C4244: '=': conversion from 'DOUBLE' to 'float', possible loss of data
+  DrawingGroup.cpp
+  DeviceManager.cpp
+  Debug.cpp
+  DX3D.cpp
+  DX.cpp
+  Cursor.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\cursor.cpp(16): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\cursor.cpp(22): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\cursor.cpp(30): warning C4244: 'argument': conversion from 'LONG' to 'FLOAT', possible loss of data
+  Collision.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\collision.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\collision.cpp(91): warning C4018: '<': signed/unsigned mismatch
+  Character.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\character.cpp(28): warning C4316: 'UIImage': object allocated on the heap may not be aligned 16
+  Camera.cpp
+  CSoundManager.cpp
+  BulletManager.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\bulletmanager.cpp(53): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\bulletmanager.cpp(107): warning C4316: 'Bullet': object allocated on the heap may not be aligned 16
+  Bullet.cpp
+  BaseObject.cpp
+  Background.cpp
+  Generating Code...
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\devicemanager.cpp(51): warning C4715: 'DeviceManager::Init': not all control paths return a value
+  Compiling...
+  AseObject.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\aseobject.cpp(49): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\aseobject.cpp(50): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\aseobject.cpp(51): warning C4305: '=': truncation from 'double' to 'float'
+  AseLoader.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\aseloader.cpp(38): warning C4316: 'AseObject': object allocated on the heap may not be aligned 16
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\aseloader.cpp(107): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  AseCharacter.cpp
+  Application.cpp
+  AllocateHierarchy.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\allocatehierarchy.cpp(18): warning C4316: 'ST_BONE': object allocated on the heap may not be aligned 16
+  AStarNode.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\astarnode.cpp(23): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  AStar.cpp
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\astar.cpp(135): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\astar.cpp(150): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\astar.cpp(162): warning C4018: '<': signed/unsigned mismatch
+c:\users\psj25_000\desktop\core_git\bgp\dx3d\astar.cpp(215): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  DX3D.vcxproj -> C:\Users\psj25_000\Desktop\Core_git\BGP\Debug\DX3D.exe
+  DX3D.vcxproj -> C:\Users\psj25_000\Desktop\Core_git\BGP\Debug\DX3D.pdb (Full PDB)
