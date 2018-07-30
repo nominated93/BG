@@ -14,6 +14,12 @@ private:
 	Inventory*		m_pIeven;
 	LPD3DXSPRITE	m_pSprite;
 
+private:
+	SYNTHESIZE(bool, m_isGun, IsGun);
+	SYNTHESIZE(bool, m_isBackpack, IsBackpack);
+	SYNTHESIZE(bool, m_isHead, IsHead);
+	SYNTHESIZE(bool, m_isArmor, IsArmor);
+
 public:
 	Equipment();
 	~Equipment();
@@ -33,6 +39,8 @@ public:
 	void RemoveItemFromEquipment();
 	void EquipmentItemIconUpdate();
 	void EquipmentItemIconRender();
+	void SetTrueItemIcon(ITEM_LIST IL);
+	void SetFalseItemIcon(ITEM_LIST IL);
 
 public:
 	vector<Item*> GetVecEquipmentItemIcon() { return m_vecEquipmentItemIcon; }

@@ -6,6 +6,7 @@
 #include "BulletManager.h"
 #include "OBB.h"
 #include "Inventory.h"
+#include "Equipment.h"
 
 
 Player::Player() :
@@ -161,10 +162,12 @@ void Player::Update()
 	m_matWorld = matS  * matRY * matT;
 
 	//m_isReload = false;
-	m_isGun = m_pInven->GetIsGun();
-	m_isBackpack = m_pInven->GetIsBackpack();
-	m_isHead = m_pInven->GetIsHead();
-	m_isArmor = m_pInven->GetIsArmor();
+
+	m_isGun = m_pInven->GetPEquipment()->GetIsGun();
+	m_isBackpack = m_pInven->GetPEquipment()->GetIsBackpack();
+	m_isHead = m_pInven->GetPEquipment()->GetIsHead();
+	m_isArmor = m_pInven->GetPEquipment()->GetIsArmor();
+
 
 	if (m_isAlive)
 	{

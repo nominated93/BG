@@ -57,6 +57,7 @@ public:
 public:
 	vector<Item*> GetVecInvenItemIcon() { return m_vecInvenItemIcon; }
 	ItemBox* GetPItemBox() { return m_pItemBox; }
+	Equipment* GetPEquipment() { return m_pEquipment; }
 
 	void SetIsEquipFromPlayer();
 };

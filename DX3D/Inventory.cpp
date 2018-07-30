@@ -10,11 +10,7 @@ Inventory::Inventory():
 	m_pEquipment(NULL),
 	m_pCursor(NULL),
 	m_pRootUI(NULL),
-	m_isInvenUI(false),
-	m_isGun(false),
-	m_isBackpack(false),
-	m_isArmor(false),
-	m_isHead(false)
+	m_isInvenUI(false)
 {
 }
 
@@ -22,7 +18,6 @@ Inventory::~Inventory()
 {
 	SAFE_RELEASE(m_pInvenUI);
 	SAFE_RELEASE(m_pEquipment);
-	SAFE_RELEASE(m_pInvenUI);
 	SAFE_RELEASE(m_pCursor);
 	
 	m_vecInvenItemIcon.clear();
@@ -51,6 +46,10 @@ void Inventory::Update()
 
 	if (m_isInvenUI)
 	{
+		if (g_pKeyboardManager->isOnceKeyDown(VK_ESCAPE))
+		{
+			m_isInvenUI = false;
+		}
 		SAFE_UPDATE(m_pRootUI);
 		m_pEquipment->Update();
 		m_pItemBox->Update();
@@ -60,6 +59,7 @@ void Inventory::Update()
 	
 		if (g_pKeyboardManager->isOnceKeyDown(VK_RBUTTON))
 		{
+
 			RemoveItemFromInven();
 			m_pEquipment->RemoveItemFromEquipment();
 			m_pItemBox->RemoveItemFromItemBox_Item();
@@ -213,7 +213,7 @@ void Inventory::RemoveItemFromInven()
 		if (PtInRect(&rc, mousePoint))
 		{
 			m_vecInvenItemIcon[i]->m_pRootIcon->RemoveChild(0);
-			m_pEquipment->AddItemToEquipment(m_vecInvenItemIcon[i]->GetItemName());
+			m_pEquipment->SetTrueItemIcon(m_vecInvenItemIcon[i]->GetItemName());
 			m_vecInvenItemIcon.erase(m_vecInvenItemIcon.begin() + i);
 
 			int iDeltaY = 42;
@@ -268,11 +268,6 @@ void Inventory::Drag()
 
 void Inventory::SetIsEquipFromPlayer()
 {
-	m_isGun = false;
-	m_isBackpack = false;
-	m_isArmor = false;
-	m_isHead = false;
-
 	for (int i = 0; i < m_pEquipment->GetVecEquipmentItemIcon().size(); i++)
 	{
 		if (m_pEquipment->GetVecEquipmentItemIcon()[i]->GetItemName() == ITEM_LIST::AK47)
