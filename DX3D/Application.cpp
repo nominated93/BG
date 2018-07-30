@@ -27,7 +27,7 @@ void Application::Destroy()
 	g_pFontMgr->Destroy();
 	Debug->Destroy();
 	g_pDeviceManager->Destroy();
-	g_pSoundManager->Destroy();
+	g_pSoundManager->Release();
 }
 
 void Application::Update()

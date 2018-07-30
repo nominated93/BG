@@ -28,6 +28,9 @@ void BulletManager::Setup(Player * player, EnemyManager * enemyManager, IMap * m
 	m_pPlayer = player;
 	m_pEnemyManager = enemyManager;
 	m_pObjMap = map;
+
+	g_pSoundManager->AddSound("테스트2", "resources/sound/bombbox.wav", false, false);
+
 }
 
 void BulletManager::Update()
@@ -103,6 +106,9 @@ void BulletManager::Render()
 
 void BulletManager::Fire(float damage, float speed, float range, D3DXVECTOR3* pos, D3DXVECTOR3* dir)
 {
+	g_pSoundManager->Stop("테스트2");
+	g_pSoundManager->Play("테스트2", 200.f);
+
 	Bullet* bullet;
 	bullet = new Bullet;
 	bullet->Init(damage, speed, range, pos, dir);

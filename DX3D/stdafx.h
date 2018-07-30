@@ -28,7 +28,6 @@
 
 #pragma comment(lib, "d3d9.lib")
 #pragma comment(lib, "d3dx9.lib")
-#pragma comment(lib, "fmod_vc")
 
 #include <string>
 #include <atlstr.h>
@@ -72,4 +71,4 @@ extern HWND g_hWnd;
 #include "TimeManager.h"
 #include "SceneManager.h"
 #include "ObjManager.h"
-#include "CSoundManager.h"
+#include "SoundManager.h"
