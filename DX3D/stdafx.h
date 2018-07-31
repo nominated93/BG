@@ -72,3 +72,4 @@ extern HWND g_hWnd;
 #include "SceneManager.h"
 #include "ObjManager.h"
 #include "SoundManager.h"
+#include "RandomFunction.h"

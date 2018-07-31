@@ -9,6 +9,7 @@ class UIText;
 class BulletManager;
 class OBB;
 class Inventory;
+class HitUI;
 
 enum eAniDirection {
 	Front = 4, Left_front, Left, Left_back, Back, Right_back, Right, Right_front
@@ -35,6 +36,7 @@ private:
 	OBB*					m_pOBB;		
 	Inventory*				m_pInven;
 	ItemManager*			m_pIM;
+	HitUI*					m_pHitUI;
 	D3DXMATRIXA16			matWorld;
 	Mesh*					m_pGun;
 	Mesh*					m_pBackpack;

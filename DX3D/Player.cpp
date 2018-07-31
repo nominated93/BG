@@ -8,6 +8,7 @@
 #include "Inventory.h"
 #include "Equipment.h"
 #include "Ray.h"
+#include "HitUI.h"
 
 
 Player::Player() :
@@ -18,6 +19,7 @@ Player::Player() :
 	m_pBulletTotalText(NULL),
 	m_pPB(NULL),
 	m_pOBB(NULL),
+	m_pHitUI(NULL),
 	m_isZoom(false),
 	m_bulletTotalCnt(100),
 	m_isReload(false),
@@ -57,6 +59,7 @@ Player::~Player()
 	SAFE_RELEASE(aniControlerTmp);
 	SAFE_RELEASE(m_pAniSet);
 	SAFE_RELEASE(m_pInven);
+	SAFE_RELEASE(m_pHitUI);
 }
 
 void Player::Init(BulletManager* bm)
@@ -106,6 +109,9 @@ void Player::Init()
 
 	//인벤토리
 	m_pInven = new Inventory(); m_pInven->AddressLink(m_pIM); m_pInven->Init();
+
+	//피격
+	m_pHitUI = new HitUI; m_pHitUI->Init();
 	
 	//충돌
 	m_pOBB = new OBB;
@@ -254,6 +260,9 @@ void Player::Update()
 
 		//인벤토리
 		m_pInven->Update();
+
+		//피격
+		m_pHitUI->Update();
 	}
 
 	else
@@ -387,6 +396,9 @@ void Player::Render()
 
 		//인벤토리
 		m_pInven->Render();
+
+		//피격
+		m_pHitUI->Render();
 	}
 
 	if (m_pSkinnedMesh)
@@ -985,6 +997,8 @@ void Player::BulletHit()
 	}
 	else
 	{
+		//피격
+		m_pHitUI->AddHitUI(g_pRandomFunc->GetInt(2));
 		m_fCurrHP -= 10.f;
 	}
 }
