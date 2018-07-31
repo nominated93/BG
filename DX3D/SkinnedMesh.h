@@ -12,6 +12,10 @@ protected:
 	float		m_fPassedBlendTime;
 	float		m_fBlendTime;
 	bool		m_isBlend;
+
+	SYNTHESIZE(D3DXVECTOR3, m_vMin, Min);
+	SYNTHESIZE(D3DXVECTOR3, m_vMax, Max);
+
 public:
 	SkinnedMesh();
 	~SkinnedMesh();

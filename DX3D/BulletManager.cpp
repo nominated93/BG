@@ -38,8 +38,8 @@ void BulletManager::Update()
 	for (m_iterBullet = m_vecBullet.begin(); m_iterBullet != m_vecBullet.end(); m_iterBullet++)
 	{
 		D3DXVECTOR3 tempPos;
-		//tempPos = (*m_iterBullet)->GetPosition() + (*m_iterBullet)->GetSpeed() * (*m_iterBullet)->GetRotation();
-		tempPos = (*m_iterBullet)->GetPosition();
+		tempPos = (*m_iterBullet)->GetPosition() + (*m_iterBullet)->GetSpeed() * (*m_iterBullet)->GetRotation();
+		//tempPos = (*m_iterBullet)->GetPosition();
 
 		//진행경로를 향하는 obb 하나를 만들어줌
 		OBB tempOBB;
@@ -57,18 +57,15 @@ void BulletManager::Update()
 			{
 				if (OBB::IsCollision(m_pEnemyManager->GetvecEnemy()[j]->GetObb(), &tempOBB))
 				{
-					m_pEnemyManager->GetvecEnemy()[j]->BulletHit(30);
-			/*		if (m_pEnemyManager->GetvecEnemy()[j]->GetIsAlive() == false)
+					//m_pEnemyManager->GetvecEnemy()[j]->BulletHit(30);
+					if (m_pEnemyManager->GetvecEnemy()[j]->GetIsAlive() == true)
 					{
-
 						m_pEnemyManager->GetvecEnemy()[j]->BulletHit(30);
 					}
 					else
 					{
 						break;
 					}
-					*/
-
 				}
 			}
 
@@ -80,11 +77,11 @@ void BulletManager::Update()
 		{
 			if (OBB::IsCollision(m_pPlayer->GetOBB(), &tempOBB))
 			{
-			/*	OBB tempPtoE;
+				OBB tempPtoE;
 				tempPtoE.Init((*m_iterBullet)->GetPosition(), m_pPlayer->GetPosition() + D3DXVECTOR3(0, 1.0f, 0));
-				tempPtoE.Update(&tempMat);*/
+				tempPtoE.Update(&tempMat);
 				m_pPlayer->BulletHit();
-				//(*m_iterBullet)->SetisAlive(false);
+				(*m_iterBullet)->SetisAlive(false);
 			}
 		}
 

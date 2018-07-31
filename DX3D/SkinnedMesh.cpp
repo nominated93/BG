@@ -39,6 +39,9 @@ void SkinnedMesh::Setup(IN char * szFolder, IN char * szFile)
 		&m_pRoot,
 		&m_pAnimationController);
 
+	m_vMin = ah.GetMin();
+	m_vMax = ah.GetMax();
+
 	SetupBoneMatrixPtrs(m_pRoot);
 }
 
@@ -125,8 +128,8 @@ void SkinnedMesh::Render(LPD3DXFRAME pFrame, D3DXMATRIXA16* m_World)
 			D3DXMatrixIdentity(&matR);
 			D3DXMatrixRotationY(&matR, D3DX_PI);
 			matWorld = pBone->matCombinedTransformMatrix * matR * (*m_World);
-	
-			g_pDevice->SetTransform(D3DTS_WORLD, &matWorld);	
+
+			g_pDevice->SetTransform(D3DTS_WORLD, &matWorld);
 			for (size_t i = 0; i < pBoneMesh->vecMtl.size(); i++)
 			{
 				g_pDevice->SetTexture(0, pBoneMesh->vecTexture[i]);

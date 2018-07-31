@@ -7,6 +7,7 @@
 #include "OBB.h"
 #include "Inventory.h"
 #include "Equipment.h"
+#include "Ray.h"
 
 
 Player::Player() :
@@ -108,7 +109,8 @@ void Player::Init()
 	
 	//충돌
 	m_pOBB = new OBB;
-	m_pOBB->Init(D3DXVECTOR3(-30.0f, m_pos.y, -30.0f), D3DXVECTOR3(30.0f, m_pos.y + 100, 30.0f));
+	m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+		, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 
 	m_bulletCntStr[0] = '\0';
 	m_bulletTotalStr[0] = '\0';
@@ -189,9 +191,24 @@ void Player::Update()
 				RECT rc;
 				GetClientRect(g_hWnd, &rc);
 
-				D3DXVECTOR3 tmpPos = D3DXVECTOR3(rc.right / 2, rc.bottom / 2, 0);
+				float vpWidth = rc.right - rc.left;
+				float vpHeight = rc.bottom - rc.top;
 
-				m_pBM->Fire(10, 0.1f, 100.0f, &(m_pos + D3DXVECTOR3(0.0f, 3.0f, 0.0f) + 2.2f * (g_pCamera->m_forward)), &(g_pCamera->m_forward));
+				Ray r = Ray::RayAtWorldSpace(vpWidth / 2, vpHeight / 2);
+
+				g_pCamera->m_fDir = 200;
+
+				//m_pBM->Fire(10, 0.1f, 100.0f, &(m_pos + D3DXVECTOR3(0.5f, 4.0f, 0.0f) + 2.2f * (g_pCamera->m_forward)), &(g_pCamera->m_forward));
+				m_pBM->Fire(10, 0.1f, 100.0f, &(r.m_pos), &r.m_dir);
+
+				if (g_pCamera->m_fDir <= 1000)
+				{
+					g_pCamera->m_fDir += 100;
+				}
+			}
+			else
+			{
+				g_pCamera->m_fDir = 1000;
 			}
 
 			//재장전
@@ -233,7 +250,7 @@ void Player::Update()
 		//PlayerMotion();
 		m_pSkinnedMesh->Update();
 
-		//m_pOBB->Update(&matWorld);
+		m_pOBB->Update(&m_matWorld);
 
 		//인벤토리
 		m_pInven->Update();
@@ -264,7 +281,8 @@ void Player::Update()
 			if (m_fEndPatternCount >= 60 * g_pTimeManager->GetEllapsedTime())
 			{
 				m_fEndPatternCount = 0.0f;
-				m_pOBB->Init(D3DXVECTOR3(-30.0f, -60, -30.0f), D3DXVECTOR3(30.0f, 160.0f, 30.0f));
+				m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+					, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 			}
 			aniControlerTmp = NULL;
 
@@ -374,7 +392,7 @@ void Player::Render()
 	if (m_pSkinnedMesh)
 	{
 		m_pSkinnedMesh->Render(NULL, &m_matWorld);
-		//m_pOBB->Render_Debug(255);
+		m_pOBB->Render_Debug(255);
 	}
 
 
@@ -967,6 +985,6 @@ void Player::BulletHit()
 	}
 	else
 	{
-		m_fCurrHP -= 0.5f;
+		m_fCurrHP -= 10.f;
 	}
 }

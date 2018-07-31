@@ -22,6 +22,7 @@ public:
 	D3DXVECTOR3		m_forward;
 
 	bool			m_isLobby;
+	float			m_fDir;
 
 public:
 	void Init();

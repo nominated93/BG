@@ -15,8 +15,8 @@ void Application::Init()
 {
 	g_pDeviceManager->Init();
 	g_pSoundManager->Init();
-	g_pSceneManager->Init();
 	g_pCamera->Init();
+	g_pSceneManager->Init();
 }
 
 void Application::Destroy()

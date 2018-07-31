@@ -67,7 +67,8 @@ void Enemy::Init(Player* player, std::string keyName, BulletManager* bulletsMana
 	//m_pAniController = m_pSkinnedMesh->GetAnimationController();
 
 	m_pOBB = new OBB;
-	m_pOBB->Init(D3DXVECTOR3(-30.0f, -60.0f, -30.0f), D3DXVECTOR3(30.0f, 160.0f, 30.0f));
+	m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+		, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 
 	m_pGun = g_pMeshManager->GetStaticMesh("AK-47");
 	D3DXVec3Normalize(&m_vDirForMoving, &m_vDirForMoving);
@@ -152,7 +153,7 @@ void Enemy::Update()
 
 	if (m_ePattern == Pattern_ATTACK)
 	{
-		if (length >= 50 && length <= 30)
+		if (length <= 50)
 		{
 			AttackPattern();
 		}
@@ -192,7 +193,8 @@ void Enemy::Update()
 		{
 			m_IsAlive = false;
 			m_fEndPatternCount = 0.0f;
-			m_pOBB->Init(D3DXVECTOR3(-30.0f, -60, -30.0f), D3DXVECTOR3(30.0f, 160.0f, 30.0f));
+			m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+				, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 		}
 	}
 	if (m_ePattern == Pattern_MOVE_LEFT)
@@ -380,7 +382,8 @@ void Enemy::AttackPattern()
 		{
 			SetAnimationIndexBlend(18);
 			m_ePattern = Pattern_RELOAD;
-			m_pOBB->Init(D3DXVECTOR3(-30.0f, -60, -30.0f), D3DXVECTOR3(30.0f, 100.0f, 30.0f));
+			m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+				, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 			return;
 		}
 		if (m_nPatternNum == 1)
@@ -406,7 +409,6 @@ void Enemy::AttackPattern()
 		m_nAmmoRemain -= 1;
 		m_fAttackPatternCount = 0.0f;
 	}
-
 }
 
 void Enemy::ReloadPattern()
@@ -416,7 +418,8 @@ void Enemy::ReloadPattern()
 	{
 		m_fReloadPatternCount = 0.0f;
 		m_nAmmoRemain = 5;
-		m_pOBB->Init(D3DXVECTOR3(-30.0f, -60, -30.0f), D3DXVECTOR3(30.0f, 160.0f, 30.0f));
+		m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+			, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 		if (m_nPatternNum == 0)
 		{
 			SetAnimationIndexBlend(38);
@@ -458,7 +461,8 @@ void Enemy::MoveLeftPattern()
 		{
 			SetAnimationIndexBlend(18);
 			m_ePattern = Pattern_RELOAD;
-			m_pOBB->Init(D3DXVECTOR3(-30.0f, -60, -30.0f), D3DXVECTOR3(30.0f, 100.0f, 30.0f));
+			m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+				, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 			return;
 		}
 		if (m_nPatternNum == 1)
@@ -487,7 +491,8 @@ void Enemy::MoveRightPattern()
 		{
 			SetAnimationIndexBlend(18);
 			m_ePattern = Pattern_RELOAD;
-			m_pOBB->Init(D3DXVECTOR3(-30.0f, -60.0f, -30.0f), D3DXVECTOR3(30.0f, 100.0f, 30.0f));
+			m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+				, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 			return;
 		}
 		if (m_nPatternNum == 2)
@@ -544,7 +549,8 @@ void Enemy::Move()
 		{
 			m_fReloadPatternCount = 0.0f;
 			m_nAmmoRemain = 5;
-			//m_pOBB->Init(D3DXVECTOR3(-30.0f, -60, -30.0f), D3DXVECTOR3(30.0f, 160.0f, 30.0f));
+			m_pOBB->Init(D3DXVECTOR3(m_pSkinnedMesh->GetMin().x, m_pSkinnedMesh->GetMin().y, m_pSkinnedMesh->GetMin().z)
+				, D3DXVECTOR3(m_pSkinnedMesh->GetMax().x, m_pSkinnedMesh->GetMax().y, m_pSkinnedMesh->GetMax().z));
 
 			SetAnimationIndexBlend(19);
 			m_ePattern = Pattern_Move;
