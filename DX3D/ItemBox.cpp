@@ -191,6 +191,16 @@ void ItemBox::RemoveItemFromItemBox()
 	{
 		m_vecItemBoxIcon[i]->m_pRootIcon->RemoveChild(0);
 		m_vecItemBoxIcon.erase(m_vecItemBoxIcon.begin()+i);
+
+		int iDeltaY = 42;
+		for (int j = 0; j < m_vecItemBoxIcon.size(); j++)
+		{
+			D3DXVECTOR3 vDeltaPos(75, 95, 0);
+
+			vDeltaPos.y = vDeltaPos.y + j * iDeltaY;
+			m_vecItemBoxIcon[j]->GetPBGIconImage()->SetPosition(&vDeltaPos);
+		}
+	
 	}
 }
 

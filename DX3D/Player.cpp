@@ -999,6 +999,7 @@ void Player::BulletHit()
 	{
 		//ÇÇ°Ý
 		m_pHitUI->AddHitUI(g_pRandomFunc->GetInt(2));
+
 		m_fCurrHP -= 10.f;
 	}
 }

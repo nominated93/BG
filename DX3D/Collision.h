@@ -22,7 +22,7 @@ public:
 
 public:
 	void Init();
-	void Init(Player * pPlayer, BulletManager* pBM, ItemManager* pIM, Inventory* pInven, ItemBox* pItemBox);
+	void Init(Player * pPlayer, BulletManager* pBM, ItemManager* pIM);
 	void Update();
 	void Render();
 

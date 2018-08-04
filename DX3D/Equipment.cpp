@@ -245,7 +245,7 @@ void Equipment::SetFalseItemIcon(ITEM_LIST IL)
 
 void Equipment::RemoveItemFromEquipment()
 {
-	for (int i = 0; i<m_vecEquipmentItemIcon.size();)
+	for (int i = 0; i<m_vecEquipmentItemIcon.size();i++)
 	{
 		LPD3DXSPRITE pSprite;
 		D3DXCreateSprite(g_pDevice, &pSprite);
@@ -268,12 +268,28 @@ void Equipment::RemoveItemFromEquipment()
 
 		if (PtInRect(&rc, mousePoint))
 		{
+			//해당장비를 장착하고 있지 않다면 또 해제하지마라
+			{
+				if (!m_isGun&& m_vecEquipmentItemIcon[i]->GetItemName() == ITEM_LIST::AK47)
+				{
+					return;
+				}
+				if (!m_isBackpack&& m_vecEquipmentItemIcon[i]->GetItemName() == ITEM_LIST::BACKPACK)
+				{
+					return;
+				}
+				if (!m_isHead && m_vecEquipmentItemIcon[i]->GetItemName() == ITEM_LIST::HEAD)
+				{
+					return;
+				}
+				if (!m_isArmor && m_vecEquipmentItemIcon[i]->GetItemName() == ITEM_LIST::ARMOR)
+				{
+					return;
+				}
+			}
+
 			m_pIeven->AddItemToInven(m_vecEquipmentItemIcon[i]->GetItemName());
 			SetFalseItemIcon(m_vecEquipmentItemIcon[i]->GetItemName());
-		}
-		else
-		{
-			i++;
 		}
 	}
 }

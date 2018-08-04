@@ -22,13 +22,13 @@ void Collision::Init()
 {
 }
 
-void Collision::Init(Player * pPlayer, BulletManager * pBM, ItemManager * pIM, Inventory* pInven, ItemBox* pItemBox)
+void Collision::Init(Player * pPlayer, BulletManager * pBM, ItemManager * pIM)
 {
 	m_pPlayer = pPlayer;
 	m_pBM = pBM;
 	m_pIM = pIM;
-	m_pInven = pInven;
-	m_pItemBox = pItemBox;
+	m_pInven = pPlayer->GetPInven();
+	m_pItemBox = pPlayer->GetPInven()->GetPItemBox();
 }
 
 void Collision::Update()

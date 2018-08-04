@@ -212,6 +212,26 @@ void Inventory::RemoveItemFromInven()
 
 		if (PtInRect(&rc, mousePoint))
 		{
+			//해당장비를 장착하고있다면 다시 장착하지말 것
+			{
+				if (m_pEquipment->GetIsGun() && m_vecInvenItemIcon[i]->GetItemName() == ITEM_LIST::AK47)
+				{
+					return;
+				}
+				if (m_pEquipment->GetIsBackpack() && m_vecInvenItemIcon[i]->GetItemName() == ITEM_LIST::BACKPACK)
+				{
+					return;
+				}
+				if (m_pEquipment->GetIsHead() && m_vecInvenItemIcon[i]->GetItemName() == ITEM_LIST::HEAD)
+				{
+					return;
+				}
+				if (m_pEquipment->GetIsArmor() && m_vecInvenItemIcon[i]->GetItemName() == ITEM_LIST::ARMOR)
+				{
+					return;
+				}
+			}
+
 			m_vecInvenItemIcon[i]->m_pRootIcon->RemoveChild(0);
 			m_pEquipment->SetTrueItemIcon(m_vecInvenItemIcon[i]->GetItemName());
 			m_vecInvenItemIcon.erase(m_vecInvenItemIcon.begin() + i);

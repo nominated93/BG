@@ -44,34 +44,17 @@ void SceneObjMap::Init()
 		"resources/skybox/sahara_ft.tga",
 		"resources/skybox/sahara_bk.tga");
 
-
-
-	//g_pSkinnedMeshManager->Load("PlayerAction", "../../", "action.X");
-	//g_pSkinnedMeshManager->Load("Action", "../../", "action.X");
-	//g_pSkinnedMeshManager->Load("Character", "../../", "Character.X");
-
-	//g_pMeshManager->AddMesh("AK-47", "resources/weapons", "AK-47.X"); //AK-47 추가
-	//g_pMeshManager->AddMesh("Head", "resources/weapons", "F_Head_G_01.X");
-	//g_pMeshManager->AddMesh("Armor", "resources/weapons", "F_Armor_C_01.X");
-	//g_pMeshManager->AddMesh("Backpack", "resources/weapons", "F_Back_C_01_.X");
-
 	m_pObjMap = new ObjMap; m_pObjMap->Init(); AddSimpleDisplayObj(m_pObjMap);
 	m_pItemManager = new ItemManager; m_pItemManager->Init(); AddSimpleDisplayObj(m_pItemManager);
 
 	m_pPlayer = new Player; m_pPlayer->AddressLink(m_pItemManager); m_pPlayer->Init();  AddSimpleDisplayObj(m_pPlayer);
 	m_pEnemyManager = new EnemyManager; m_pEnemyManager->Init(); AddSimpleDisplayObj(m_pEnemyManager);
 	m_pBulletManager = new BulletManager; m_pBulletManager->Setup(m_pPlayer, m_pEnemyManager, m_pObjMap); AddSimpleDisplayObj(m_pBulletManager);
-	//m_pMonsterManager = new MonsterManager; m_pMonsterManager->Init(); AddSimpleDisplayObj(m_pMonsterManager);
 	m_pPicking = new Picking; m_pPicking->Init(); AddSimpleDisplayObj(m_pPicking);
 	m_pMinimap = new Minimap; m_pMinimap->Init(); AddSimpleDisplayObj(m_pMinimap);
 	
 	//Collision Init이 제일 뒤에 있어야됨
-	m_pCollision = new Collision; m_pCollision->Init(m_pPlayer,		//플레이어
-								m_pPlayer->GetPBulletManager(),		//볼렛메니저
-												m_pItemManager,		//아이템매니저
-										m_pPlayer->GetPInven(),		//인벤
-						m_pPlayer->GetPInven()->GetPItemBox());		//아이템박스
-	AddSimpleDisplayObj(m_pCollision);
+	m_pCollision = new Collision; m_pCollision->Init(m_pPlayer, m_pPlayer->GetPBulletManager(),	m_pItemManager); AddSimpleDisplayObj(m_pCollision);
 
 	//test
 	m_pPlayer->Init(m_pBulletManager);
