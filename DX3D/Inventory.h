@@ -3,6 +3,7 @@
 #include "UIButton.h"
 #include "UIImage.h"
 #include "IUIObject.h"
+#include "UIText.h"
 #include "ItemManager.h"
 
 class Cursor;

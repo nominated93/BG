@@ -106,8 +106,7 @@ void Inventory::AddItemToInven(ITEM_LIST IL)
 	case ITEM_LIST::AK47:
 	{
 		Item * CItem;
-		CItem = new Item();
-		CItem->Init();
+		CItem = new Item(); CItem->Init();
 		CItem->SetItemName(ITEM_LIST::AK47);
 		CItem->SetItemInto(ITEM_INTO::INVEN);
 
@@ -115,10 +114,9 @@ void Inventory::AddItemToInven(ITEM_LIST IL)
 		CItem->GetPIconImage()->SetTexture("resources/ui/AK47ICON_INVEN.png");
 		CItem->GetPBGIconImage()->SetPosition(&vDeltaPos);
 
-		CItem->m_pRootIcon = CItem->GetPBGIconImage();
-		CItem->m_pRootIcon->AddChild(CItem->GetPIconImage());
-
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
+
+		CItem->GetPNameText()->m_text = _T("AK 47");
 
 		m_vecInvenItemIcon.push_back(CItem);
 	}
@@ -135,10 +133,9 @@ void Inventory::AddItemToInven(ITEM_LIST IL)
 		CItem->GetPIconImage()->SetTexture("resources/ui/¹æÅºÁ¶³¢¾ÆÀÌÄÜ.png");
 		CItem->GetPBGIconImage()->SetPosition(&vDeltaPos);
 
-		CItem->m_pRootIcon = CItem->GetPBGIconImage();
-		CItem->m_pRootIcon->AddChild(CItem->GetPIconImage());
-
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
+
+		CItem->GetPNameText()->m_text = _T("¹æÅºÁ¶³¢");
 
 		m_vecInvenItemIcon.push_back(CItem);
 	}
@@ -155,10 +152,9 @@ void Inventory::AddItemToInven(ITEM_LIST IL)
 		CItem->GetPIconImage()->SetTexture("resources/ui/¶Ñ²±¾ÆÀÌÄÜ.png");
 		CItem->GetPBGIconImage()->SetPosition(&vDeltaPos);
 
-		CItem->m_pRootIcon = CItem->GetPBGIconImage();
-		CItem->m_pRootIcon->AddChild(CItem->GetPIconImage());
-
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
+
+		CItem->GetPNameText()->m_text = _T("¹æÅº¸ð");
 
 		m_vecInvenItemIcon.push_back(CItem);
 	}
@@ -175,10 +171,9 @@ void Inventory::AddItemToInven(ITEM_LIST IL)
 		CItem->GetPIconImage()->SetTexture("resources/ui/°¡¹æ¾ÆÀÌÄÜ.png");
 		CItem->GetPBGIconImage()->SetPosition(&vDeltaPos);
 
-		CItem->m_pRootIcon = CItem->GetPBGIconImage();
-		CItem->m_pRootIcon->AddChild(CItem->GetPIconImage());
-
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
+
+		CItem->GetPNameText()->m_text = _T("°¡¹æ");
 
 		m_vecInvenItemIcon.push_back(CItem);
 	}

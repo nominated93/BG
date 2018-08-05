@@ -12,12 +12,14 @@ enum eMouseState
 class SkinnedMesh;
 class UIImage;
 class IUIObject;
+class UIText;
 class Item : public IDisplayObject
 {
 private:
-	SkinnedMesh * m_pSkinnedMesh;
+	SkinnedMesh *	m_pSkinnedMesh;
 	UIImage*		m_pIconImage;
 	UIImage*		m_pIconBackGroundImage;
+	UIText*			m_pNameText;
 	LPD3DXSPRITE	m_pSprite;
 	LPD3DXMESH		m_pMesh;
 
@@ -59,6 +61,7 @@ public:
 
 	BoundingSphere GetCollisionSphere() { return m_tCollisionSphere; }
 	UIImage* GetPIconImage() { return m_pIconImage; }
+	UIText* GetPNameText() { return m_pNameText; }
 	UIImage* GetPBGIconImage() { return m_pIconBackGroundImage; }
 
 

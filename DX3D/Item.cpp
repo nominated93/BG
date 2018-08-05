@@ -2,6 +2,7 @@
 #include "Item.h"
 #include "SkinnedMesh.h"
 #include "UIImage.h"
+#include "UIText.h"
 
 Item::Item() :
 	m_pSkinnedMesh(NULL),
@@ -10,6 +11,7 @@ Item::Item() :
 	m_isCollision(false),
 	m_eMouseState(NORMAL),
 	m_isPick(false),
+	m_pNameText(NULL),
 	m_pRootIcon(NULL)
 {
 }
@@ -19,7 +21,8 @@ Item::~Item()
 	SAFE_DELETE(m_pSkinnedMesh);
 	SAFE_DELETE(m_pIconImage);
 	SAFE_DELETE(m_pIconBackGroundImage);
-	SAFE_DELETE_ARRAY(m_pRootIcon);
+	SAFE_DELETE(m_pNameText);
+	SAFE_DELETE(m_pRootIcon);
 }
 
 
@@ -28,6 +31,14 @@ void Item::Init()
 	//m_pSkinnedMesh = new SkinnedMesh();
 	m_pIconImage = new UIImage(m_pSprite);
 	m_pIconBackGroundImage = new UIImage(m_pSprite);
+	m_pNameText = new UIText(GetFont(FontType_NORMAL), NULL);
+
+	m_pRootIcon = m_pIconBackGroundImage;
+	m_pRootIcon->AddChild(m_pIconImage);
+	m_pRootIcon->AddChild(m_pNameText);
+	m_pNameText->m_drawTextFormat = DT_LEFT | DT_NOCLIP;
+	m_pNameText->m_size = D3DXVECTOR2(40, 100);
+	m_pNameText->SetPosition(&D3DXVECTOR3(60, 5, 0));
 
 }
 
