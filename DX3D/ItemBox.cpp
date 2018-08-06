@@ -6,9 +6,7 @@
 
 ItemBox::ItemBox() :
 	m_vecItemBoxIcon(NULL),
-	m_pInven(NULL),
-	m_iVecIndex(0)
-
+	m_pInven(NULL)
 {
 }
 
@@ -58,7 +56,7 @@ void ItemBox::AddItemToItemBox(ITEM_LIST IL)
 
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
 
-		CItem->m_iVecIndex = m_iVecIndex;
+		CItem->m_iterListTemp = m_iterListTemp;
 
 		CItem->GetPNameText()->m_text = _T("AK 47");
 
@@ -78,7 +76,7 @@ void ItemBox::AddItemToItemBox(ITEM_LIST IL)
 		CItem->GetPBGIconImage()->SetPosition(&vDeltaPos);
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
 
-		CItem->m_iVecIndex = m_iVecIndex;
+		CItem->m_iterListTemp = m_iterListTemp;
 
 		CItem->GetPNameText()->m_text = _T("¹æÅºÁ¶³¢");
 
@@ -98,7 +96,7 @@ void ItemBox::AddItemToItemBox(ITEM_LIST IL)
 		CItem->GetPBGIconImage()->SetPosition(&vDeltaPos);
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
 
-		CItem->m_iVecIndex = m_iVecIndex;
+		CItem->m_iterListTemp = m_iterListTemp;
 
 		CItem->GetPNameText()->m_text = _T("¹æÅº¸ð");
 
@@ -119,7 +117,7 @@ void ItemBox::AddItemToItemBox(ITEM_LIST IL)
 
 		CItem->GetPBGIconImage()->m_AlphaBlendValue = 15;
 
-		CItem->m_iVecIndex = m_iVecIndex;
+		CItem->m_iterListTemp = m_iterListTemp;
 
 		CItem->GetPNameText()->m_text = _T("°¡¹æ");
 
@@ -132,7 +130,7 @@ void ItemBox::AddItemToItemBox(ITEM_LIST IL)
 
 void ItemBox::RemoveItemFromItemBox_Item()
 {
-	auto pVec = m_pIM->GetPVecItem();
+	auto pList = m_pIM->GetPListItem();
 
 	for (int i = 0; i<m_vecItemBoxIcon.size();)
 	{
@@ -156,7 +154,7 @@ void ItemBox::RemoveItemFromItemBox_Item()
 
 		if (PtInRect(&rc, mousePoint))
 		{
-			pVec->erase(pVec->begin()+ m_vecItemBoxIcon[i]->m_iVecIndex);
+			pList->erase(m_vecItemBoxIcon[i]->m_iterListTemp);
 			int iDeltaY = 42;
 
 			m_vecItemBoxIcon[i]->m_pRootIcon->RemoveChild(0);

@@ -25,7 +25,9 @@ private:
 
 public:
 	float			m_fFixRenderX, m_fFixRenderZ;
-	int				m_iVecIndex;
+
+public:
+	list<Item*>::iterator	m_iterListTemp;
 
 private:
 	SYNTHESIZE(ITEM_LIST, m_tItemName, ItemName);

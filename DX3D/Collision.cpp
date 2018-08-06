@@ -60,42 +60,44 @@ bool Collision::CheckSphereIntersect(D3DXVECTOR3 vCenter1, float fRadius1, D3DXV
 
 void Collision::Collision_ItemBoxPlayer()
 {
-	for (int i = 0; i<m_pIM->GetVecItem().size(); i++)
+	auto pList = m_pIM->GetPListItem();
+	list<Item*>::iterator iterListItem;
+	for (iterListItem = pList->begin(); iterListItem!= pList->end(); iterListItem++)
 	{
-		if (CheckSphereIntersect(m_pIM->GetVecItem()[i]->GetCollisionSphere().center, m_pIM->GetVecItem()[i]->GetCollisionSphere().radius,
+		if (CheckSphereIntersect((*iterListItem)->GetCollisionSphere().center, (*iterListItem)->GetCollisionSphere().radius,
 			m_pPlayer->GetCollisionSphere().center, m_pPlayer->GetCollisionSphere().radius))
 		{
-			if (m_pIM->GetVecItem()[i]->GetIsCollision() == false)
+			if ((*iterListItem)->GetIsCollision() == false)
 			{
-				m_pIM->GetVecItem()[i]->SetIsCollision(true);
-				m_pItemBox->m_iVecIndex = i;
-				m_pItemBox->AddItemToItemBox(m_pIM->GetVecItem()[i]->GetItemName());
+				(*iterListItem)->SetIsCollision(true);
+				m_pItemBox->m_iterListTemp = iterListItem;
+				m_pItemBox->AddItemToItemBox((*iterListItem)->GetItemName());
 			}
 		}
 
 		else
 		{
-			if (m_pItemBox->GetVecItemBoxIcon().size() > 0 && m_pIM->GetVecItem()[i]->GetIsCollision() == true)
+			if (m_pItemBox->GetVecItemBoxIcon().size() > 0 && (*iterListItem)->GetIsCollision() == true)
 			{
 				m_pItemBox->RemoveItemFromItemBox();
 			}
-			m_pIM->GetVecItem()[i]->SetIsCollision(false);
+			(*iterListItem)->SetIsCollision(false);
 		}
 	}
 }
 
 void Collision::Collision_ItemPlayer()
 {
-	auto vec = m_pIM->GetPVecItem();
-
-	for (int i = 0; i<vec->size(); i++)
+	auto pList = m_pIM->GetPListItem();
+	list<Item*>::iterator iterListItem;
+	for (iterListItem = pList->begin(); iterListItem != pList->end(); iterListItem++)
 	{
-		if (CheckSphereIntersect(m_pIM->GetVecItem()[i]->GetCollisionSphere().center, m_pIM->GetVecItem()[i]->GetCollisionSphere().radius,
+		if (CheckSphereIntersect((*iterListItem)->GetCollisionSphere().center, (*iterListItem)->GetCollisionSphere().radius,
 			m_pPlayer->GetCollisionSphere().center, m_pPlayer->GetCollisionSphere().radius))
 		{
-			m_pIM->GetVecItem()[i]->SetIsCollision(true);
-			m_pInven->AddItemToInven(m_pIM->GetVecItem()[i]->GetItemName());
-			vec->erase(vec->begin() + i);
+			(*iterListItem)->SetIsCollision(true);
+			m_pInven->AddItemToInven((*iterListItem)->GetItemName());
+			pList->erase(iterListItem);
 
 
 			if (m_pItemBox->GetVecItemBoxIcon().size() > 0)
@@ -107,7 +109,7 @@ void Collision::Collision_ItemPlayer()
 
 		else
 		{
-			m_pIM->GetVecItem()[i]->SetIsCollision(false);
+			(*iterListItem)->SetIsCollision(false);
 
 		}
 	}

@@ -13,7 +13,7 @@ private:
 	ItemManager*			m_pIM;
 
 public:
-	int						m_iVecIndex;
+	list<Item*>::iterator				m_iterListTemp;
 
 private:
 	SYNTHESIZE(vector<Item*>, m_vecItemBoxIcon, VecItemBoxIcon);

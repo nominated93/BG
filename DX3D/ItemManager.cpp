@@ -10,7 +10,7 @@ ItemManager::ItemManager()
 
 ItemManager::~ItemManager()
 {
-	m_vecItem.clear();
+	m_listItem.clear();
 }
 
 void ItemManager::Init()
@@ -42,7 +42,7 @@ void ItemManager::Init()
 
 void ItemManager::Update()
 {
-	for (m_iterItem = m_vecItem.begin(); m_iterItem != m_vecItem.end(); m_iterItem++)
+	for (m_iterItem = m_listItem.begin(); m_iterItem != m_listItem.end(); m_iterItem++)
 	{
 		(*m_iterItem)->Update();
 	}
@@ -50,7 +50,7 @@ void ItemManager::Update()
 
 void ItemManager::Render()
 {
-	for (m_iterItem = m_vecItem.begin(); m_iterItem != m_vecItem.end(); m_iterItem++)
+	for (m_iterItem = m_listItem.begin(); m_iterItem != m_listItem.end(); m_iterItem++)
 	{
 		(*m_iterItem)->Render();
 	}
@@ -61,5 +61,5 @@ void ItemManager::ItemSetup(D3DXVECTOR3 pos, D3DXVECTOR3 rot, ITEM_LIST IL, ITEM
 	Item* pItem = new Item;
 	pItem->Setup(pos, rot,IL,II);
 
-	m_vecItem.push_back(pItem);
+	m_listItem.push_back(pItem);
 }
